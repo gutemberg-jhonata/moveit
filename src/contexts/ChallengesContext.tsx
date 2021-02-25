@@ -50,9 +50,22 @@ export function ChallengesProvider({ children }: ChallengesProviderProps) {
     }
 
     function completeChallenge() {
-        setChallengesCompleted(challengesCompleted + 1);
-        //setCurrentExperience(currentExperience + activeChallenge.amount);
+        if (!activeChallenge) {
+            return;
+        }
+
+        const { amount } = activeChallenge;
+
+        let finalExperience = currentExperience + amount;
+
+        if (finalExperience >= experienceToNextLevel) {
+            finalExperience -= experienceToNextLevel;
+            levelUp();
+        }
+
+        setCurrentExperience(finalExperience);
         setActiveChallenge(null);
+        setChallengesCompleted(challengesCompleted + 1);
     }
 
     return (
@@ -67,7 +80,7 @@ export function ChallengesProvider({ children }: ChallengesProviderProps) {
                 startNewChallenge,
                 resetChallenge,
                 completeChallenge
-            }}>
+        }}>
             { children }
         </ChallengesContext.Provider>
     );
