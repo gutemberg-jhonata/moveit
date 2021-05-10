@@ -43,7 +43,7 @@ yarn dev
 
 ## 💻 Projeto
 
-O Moveit é uma aplicação desenvolvida durante a 4º edição do evento NLW> Utilizando da técnica pomodoro, o Moveit tem como objetivo incentivar os desenvolvedores a se exercitarem, durante sua jornada de trabalho ou estudos.
+O Moveit é uma aplicação desenvolvida durante a 4º edição do evento NLW. Utilizando da técnica pomodoro, o Moveit tem como objetivo incentivar os desenvolvedores a se exercitarem, durante sua jornada de trabalho ou estudos.
 
 ## 🔖 Layout
 
