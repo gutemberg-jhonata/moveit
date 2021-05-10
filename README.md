@@ -22,9 +22,7 @@
   <img alt="dev.finances" src=".github/moveit.svg" width="100%">
 
   <br>
-  <a href="https://moveit-gutemberg.vercel.app/">
-    <button style="background-color: #1374ef; color: #fff; border: none; width: 104px; height: 36px; border-radius: 5px; cursor: pointer">Preview</button>
-  </a>
+  <a href="https://moveit-gutemberg.vercel.app/"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
 </p>
 
 ## 🧪 Tecnologias
